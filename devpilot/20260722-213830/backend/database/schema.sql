@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS project_scans (id SERIAL PRIMARY KEY, username VARCHAR(255) NOT NULL, project_name VARCHAR(255) NOT NULL, status VARCHAR(50) NOT NULL, score INTEGER NOT NULL, updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP); CREATE INDEX idx_project_lookup ON project_scans(username, project_name);
